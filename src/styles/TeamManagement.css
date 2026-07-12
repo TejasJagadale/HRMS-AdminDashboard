@@ -1,0 +1,164 @@
+.team-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.team-card {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  /* box-shadow: 0 10px 30px rgba(0,0,0,0.08); */
+}
+
+.team-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0369a1;
+}
+
+.team-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.team-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.team-form button {
+  padding: 10px 16px;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+.actions button {
+  margin-left: 8px;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.actions button:first-child {
+  background: #41ff87;
+  color: white;
+}
+
+.actions button:last-child {
+  background: #ff6a6a;
+  color: white;
+}
+
+/* ===== Tablet (1024px) ===== */
+@media (max-width: 1024px) {
+  .team-container {
+    padding: 30px;
+  }
+
+  .team-card {
+    max-width: 500px;
+    padding: 25px;
+  }
+
+  .team-form {
+    flex-direction: row;
+  }
+}
+
+/* ===== Tablet / Small Devices (768px) ===== */
+@media (max-width: 768px) {
+  .team-container {
+    padding: 20px;
+  }
+
+  .team-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .team-card h2 {
+    font-size: 20px;
+  }
+
+  .team-form {
+    flex-direction: column;
+  }
+
+  .team-form input {
+    width: 100%;
+  }
+
+  .team-form button {
+    width: 100%;
+  }
+
+  .team-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .actions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* ===== Mobile (420px) ===== */
+@media (max-width: 420px) {
+  .team-container {
+    padding: 15px;
+  }
+
+  .team-card {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .team-card h2 {
+    font-size: 18px;
+  }
+
+  .team-form input {
+    padding: 8px;
+  }
+
+  .team-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .team-item {
+    font-size: 14px;
+  }
+
+  .actions button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
